@@ -1,0 +1,36 @@
+Git command review
+Compare two commits, printing each line that is present in one commit but not the other.
+
+git diff will do this. It takes two arguments - the two commit ids to compare. 
+git show -> compara um commit com o seu pai
+
+
+Make a copy of an entire Git repository, including the history, onto your own computer.
+
+git clone will do this. It takes one argument - the url of the repository to copy. 
+
+
+Temporarily reset all files in a directory to their state at the time of a specific commit.
+
+git checkout will do this. It takes one argument - the commit ID to restore. 
+
+
+Show the commits made in this repository, starting with the most recent.
+
+git log will do this. It doesn't take any arguments.
+
+git branch -> mostra os branchs
+git branch nome_branch -> cria o branch nome_branch
+
+quando fizer checkout a um commit, para criar um branch
+git checkout -b nome_branch
+git branch -d coins -> apaga a labes coins e não os commits
+
+adicionar um repositorio remoto
+git remote
+git remote add origin link_do_repositorio
+git remote -v -> mais informação
+
+para actualizar o repositorio remoto
+git push nome_repositorio nome_branch
+exemplo -> git push origin master
